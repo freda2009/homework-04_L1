@@ -20,10 +20,13 @@
   z-index: 0;
 }
 
+/* ─── PC: display 1 — 822×360, 300px ─── */
 .blog-watermark {
   position: absolute;
-  bottom: -30px;
-  left: 40px;
+  bottom: -113px; /* bottom: -134px; */
+  left: 538px;
+  width: 822px;
+  height: 360px;
   font-size: 300px;
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
@@ -34,6 +37,7 @@
   pointer-events: none;
   white-space: nowrap;
   user-select: none;
+  overflow: hidden;
 }
 
 .blog-hero-content {
@@ -476,16 +480,19 @@
    BLOG RWD — 手機版
    ============================================== */
 @media (max-width: 767px) {
-
-  /* Hero */
+  /* ─── MobileHero */
   .blog-hero {
+    background-image: url(../img/img_banner_blog_mobile.png);
     padding: 0 12px;
   }
 
+  /* ─── Mobile ≤ 767px: display 2 — 438×192, 160px ─── */
   .blog-watermark {
+    width: 438px;
+    height: 192px;
     font-size: 160px;
-    bottom: -10px;
-    left: 12px;
+    bottom: -47px;
+    left: -36px;
   }
 
   .blog-hero-title {
