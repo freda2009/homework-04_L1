@@ -116,7 +116,7 @@
   width: var(--space-1);                       /* 4px */
   height: var(--space-1);
   border-radius: var(--radius-full);
-  background-color: var(---color-neutral-500);  /* #737373 */
+  background-color: var(--color-neutral-700);  /* #404040*/
   flex-shrink: 0;
 }
 
