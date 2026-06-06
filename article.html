@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>六角｜2026軟體工程師體驗營作業-Nelson- Article</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close,dehaze,drafts,keyboard_arrow_down,keyboard_arrow_left,keyboard_arrow_right,keyboard_arrow_up,share,visibility,web" />
+
+  <link rel="stylesheet" href="css/header-footer.css">
+   <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header  > <!---class="sticky-top"--->
+    <nav class="navbar navbar-expand-md  ">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand logo" href="/" aria-label="Nelson LOGO"></a>
+
+      <!-- Mobile: hamburger → offcanvas -->
+        <button class="navbar-toggler d-md-none" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop: inline nav -->
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav gap-1 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="service.html">服務項目</a></li>
+            <li class="nav-item"><a class="nav-link" href="project.html">專案作品</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">部落格</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">與我聯絡</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MOBILE OFFCANVAS MENU ===== -->
+  <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <span class="offcanvas-title" id="mobileMenuLabel">Nelson</span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">服務項目</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">專案作品</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-dismiss="offcanvas">部落格</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">與我聯絡</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Page content placeholder -->
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="article-breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="/">首頁</a></li>
+        <li class="breadcrumb-sep" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </li>
+        <li><a href="blog.html">部落格</a></li>
+        <li class="breadcrumb-sep" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </li>
+        <li><span class="breadcrumb-current">部落格標題</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== ARTICLE SEC ===== -->
+  <section class="article-sec">
+    <div class="article-container">
+
+      <!-- top: tags / title / subtitle -->
+      <div class="article-top">
+        <div class="article-meta">
+          <div class="article-tags">
+            <span class="article-tag">UI/UX 設計</span>
+            <span class="article-tag-dot" aria-hidden="true"></span>
+            <span class="article-tag">前端技術</span>
+            <span class="article-tag-dot" aria-hidden="true"></span>
+            <span class="article-tag">AI 趨勢應用</span>
+          </div>
+          <time class="article-date" datetime="2022-10-16">Oct 16, 2022</time>
+        </div>
+
+        <h1 class="article-title">
+          當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力
+        </h1>
+
+        <h3 class="article-subtitle">
+          從像素到程式碼，探討 AI 如何成為數位職人的最強外掛，在美學與邏輯的交界處創造全新價值。
+        </h3>
+
+        <p>
+          在跨入 UI/UX 與前端領域的第十年，我見識了無數技術更迭，但 AI 的出現無疑是最具衝擊性的一場革命。
+          本文將深度解析資深設計師如何將生成式 AI 整合進現有工作流，透過 AI 釋放視覺想像力，
+          並利用智慧化工具優化前端開發效率，實踐美學與技術的完美共生。
+        </p>
+      </div><!-- /.article-top -->
+
+      <!-- body: article content -->
+      <div class="article-body">
+        <h2>視覺想像力的無限延伸：從 Moodboard 到驚艷視覺</h2>
+
+        <p>
+          以往在發想專案視覺風格時，往往受限於素材搜尋的耗時與手繪草圖的侷限。現在，透過 Midjourney 或
+          DALL-E 等工具，我能在毫分鐘內產出數十種具備極致美感的配色方案與角色可能性。這並非取代設計師的意義，
+          而是將我們從繁瑣的執行工作中解放，轉而擔任「視覺策展人」的角色，
+          從龐大的 AI 提案中精挑出最契合品牌調性的視覺語言。
+        </p>
+
+        <!-- Article image -->
+        <figure class="article-figure">
+          <img src="../img/blog_content_1.png" alt="設計師在辦公桌前使用筆電進行設計工作" />
+          <figcaption>利用 AI 快速生成的品牌視覺概念圖，能有效縮短客戶在初期的溝通成本。</figcaption>
+        </figure>
+
+        <!-- Pull quote -->
+        <blockquote class="article-quote">
+          <p class="article-quote-label">我認為</p>
+          <h3>AI 不會取代設計師，但那些懂得與 AI 協作的人，將會定義下一個世代的設計標準</h3>
+        </blockquote>
+
+        <h2>工作流的重塑：當設計稿與程式碼無縫銜接</h2>
+        <p>
+          身為前端工程師，最挑戰的環節往往是將精美的設計稿「精準轉譯」為流暢的程式碼。AI 的介入讓這個轉譯過程變得前所未有的流暢。無論是自動產生複雜的 CSS 佈局、建構 React 元件邏輯，還是優化響應式斷點，AI 就像是一位全天候待命的技術助理，讓我們能將精力集中在更高維度的互動體驗設計與產品效能優化。
+        </p>
+
+        <!-- Article image -->
+        <figure class="article-figure">
+          <img src="../img/blog_content_2.png" alt="設計師在辦公桌前使用筆電進行設計工作" />
+          <figcaption>AI 輔助生成的 Clean Code 結構，顯著提升開發整潔度。</figcaption>
+        </figure>
+        
+        <h2>跨領域利器：精選 AI 工具的實戰應用對比</h2>
+        <p>
+          在數位職人的工具箱中，選擇正確的武器至關重要。為了讓大家在開發與設計的混合戰場中更具效率，我整理了一份實戰應用對比表。這份表格不僅是基於工具的功能，更是從我這十年的實務經驗出發，評估各項工具在實際專案中的落地價值與學習門檻，協助你快速找到最適合自己的 AI 隊友。
+        </p>
+
+        <h3 class="article-table-title">2026 數位職人必備 AI 工具效能對比表</h3>
+
+        <table class="article-table">
+          <thead>
+            <tr>
+              <th>工具名稱</th>
+              <th>應用範疇</th>
+              <th>核心優勢</th>
+              <th>學習曲線</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Midjourney</td>
+              <td>視覺構思</td>
+              <td class="">創意發想極致，適合風格探索與氛圍圖生成</td>
+              <td>中高</td>
+            </tr>
+            <tr>
+              <td>Figma AI</td>
+              <td>UI 設計</td>
+              <td class="">直接整合於設計稿，快速生成組件與圖表</td>
+              <td>低</td>
+            </tr>
+            <tr>
+              <td>GitHub Copilot</td>
+              <td>程式開發</td>
+              <td class="">邏輯代碼預測準確，減少重複性標籤撰寫</td>
+              <td>中</td>
+            </tr>
+            <tr>
+              <td>Claude</td>
+              <td>程式邏輯</td>
+              <td class="">具備強大文脈理解力，能優化複雜的用戶流程</td>
+              <td>中</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          AI 的崛起並非數位職涯的終點，而是另一個高峰的起點。對於喜歡把美學與程式結合的我們來說，這是一個最好的時代。AI 給了我們更強大的雙翼，讓我們能飛得更高、看見更遠的設計地平線。保持好奇心，持續優化你的 Prompt，讓技術為藝術服務，創造出更多令人驚艷的作品。
+        </p>
+
+      </div><!-- /.article-body -->
+
+      <!-- bottom: stats + share -->
+      <div class="article-bottom">
+        <div class="article-stats">
+          <span class="article-stat">
+            <span class="material-symbols-outlined">visibility</span>
+            110 views
+          </span>
+          <span class="article-stat">
+            <span class="material-symbols-outlined">share</span>
+            2 shares
+          </span>
+        </div>
+
+        <div class="article-share">
+          <span class="article-share-label">分享</span>
+          <div class="article-share-btns">
+            <!-- Share -->
+             <a class="share-btn" aria-label="Share" href="#" target="_blank">
+              <span class="material-symbols-outlined">share</span>
+            </a>
+            
+            <a class="share-btn" aria-label="instagram" href="#" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            
+            <a class="share-btn" aria-label="line" href="#" target="_blank">
+              <i class="bi bi-line"></i>
+            </a>
+
+          </div>
+        </div>
+      </div><!-- /.article-bottom -->
+
+    </div><!-- /.article-container -->
+  </section><!-- /.article-sec -->
+
+  <!-- ===== RELATED BLOG SEC ===== -->
+  <section class="related-blog">
+    <div class="related-blog-inner">
+
+      <div class="related-blog-header">
+        <p class="related-blog-label">相關文章</p>
+        <h2 class="related-blog-title">RELATED BLOG</h2>
+      </div>
+
+      <div class="related-blog-grid">
+
+        <!-- Card 1 -->
+        <article class="related-blog-card">
+          <a href="#" class="related-blog-card-img-wrap">
+            <img src="img/blog_2.png" alt="10年職人手記封面" class="related-blog-card-img" />
+          </a>
+          <div class="related-blog-card-body">
+            <div class="related-blog-card-tags">
+              <span class="related-blog-card-tag">UI/UX 設計</span>
+              <span class="related-blog-card-tag-dot" aria-hidden="true">·</span>
+              <span class="related-blog-card-tag">設計視點</span>
+              <span class="related-blog-card-tag-dot" aria-hidden="true">·</span>
+              <span class="related-blog-card-tag">前端技術</span>
+            </div>
+            <h3 class="related-blog-card-title">
+              10年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統
+            </h3>
+            <div class="related-blog-card-meta"> 
+
+              <time class="related-blog-card-date" datetime="2022-10-16">Oct 16, 2022</time>
+              <div class="related-blog-card-stats">
+                    <span class="related-blog-card-views">
+                      <span class="material-symbols-outlined">visibility</span>
+                      110 views
+                    </span>
+                    <span class="related-blog-card-shares">
+                      <span class="material-symbols-outlined">share</span>
+                      2 shares
+                    </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="related-blog-card">
+          <a href="#" class="related-blog-card-img-wrap">
+            <img src="img/blog_3.png" alt="從平面識別到數位體驗封面" class="related-blog-card-img" />
+          </a>
+          <div class="related-blog-card-body">
+            <div class="related-blog-card-tags">
+              <span class="related-blog-card-tag">品牌設計</span>
+              <span class="related-blog-card-tag-dot" aria-hidden="true">·</span>
+              <span class="related-blog-card-tag">平面設計</span>
+              <span class="related-blog-card-tag-dot" aria-hidden="true">·</span>
+              <span class="related-blog-card-tag">UI/UX 設計</span>
+            </div>
+            <h3 class="related-blog-card-title">
+              從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯
+            </h3>
+            <div class="related-blog-card-meta">
+              <time class="related-blog-card-date" datetime="2022-10-16">Oct 16, 2022</time>
+              <div class="related-blog-card-stats">
+                    <span class="related-blog-card-views">
+                      <span class="material-symbols-outlined">visibility</span>
+                      110 views
+                    </span>
+                    <span class="related-blog-card-shares">
+                      <span class="material-symbols-outlined">share</span>
+                      2 shares
+                    </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="related-blog-card">
+          <a href="#" class="related-blog-card-img-wrap">
+            <img src="img/img_blog_05.png" alt="揭開金融 App 設計密碼封面" class="related-blog-card-img" />
+          </a>
+          <div class="related-blog-card-body">
+            <div class="related-blog-card-tags">
+              <span class="related-blog-card-tag">前端技術</span>
+              <span class="related-blog-card-tag-dot" aria-hidden="true">·</span>
+              <span class="related-blog-card-tag">後端架構</span>
+              <span class="related-blog-card-tag-dot" aria-hidden="true">·</span>
+              <span class="related-blog-card-tag">AI 趨勢應用</span>
+            </div>
+            <h3 class="related-blog-card-title">
+              揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性
+            </h3>
+            <div class="related-blog-card-meta">
+              <time class="related-blog-card-date" datetime="2022-10-16">Oct 16, 2022</time>
+              <div class="related-blog-card-stats">
+                    <span class="related-blog-card-views">
+                      <span class="material-symbols-outlined">visibility</span>
+                      110 views
+                    </span>
+                    <span class="related-blog-card-shares">
+                      <span class="material-symbols-outlined">share</span>
+                      2 shares
+                    </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.related-blog-grid -->
+    </div><!-- /.related-blog-inner -->
+  </section>
+
+
+
+
+  <!-- ===== FOOTER / CONTACT ===== -->
+  <footer id="contact" class="contact-section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- 左欄：文字 + 社群（用 flex 推到底部） -->
+        <div class="col-md-5">
+          <div class="contact-left">
+            <div class="contact-top">
+              <p class="contact-label">與我聯絡</p>
+              <h2 class="contact-title">CONTACT</h2>
+              <p class="contact-desc">
+                若有數位產品設計和開發相關問題<br>
+                歡迎填寫表單 或 直接與我聯絡！
+              </p>
+            </div>
+            <!-- 桌面版社群（flex 推到底部） -->
+            <div class="contact-social d-none d-md-block">
+              <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="LINE"><i class="bi bi-line"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              </div>
+              <p class="contact-email">
+                <span class="material-symbols-outlined">drafts</span>
+                <a class="contact-email-link" href="mailto:service@hexschool.com">service@hexschool.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右欄：表單 -->
+        <div class="col-md-7">
+          <div class="contact-form">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="姓名">
+              </div>
+              <div class="col-sm-6">
+                <input type="tel" class="form-control" placeholder="手機號碼">
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control" placeholder="電子信箱">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" placeholder="備註"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-submit">送出</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 手機版社群（排在表單下方） -->
+        <div class="col-12 d-md-none">
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LINE" target="_blank"><i class="bi bi-line"></i></a>
+            <a href="#" aria-label="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p class="contact-email">
+            <span class="material-symbols-outlined">drafts</span>
+            <a class="contact-email-link" href="mailto:service@hexschool.com">service@hexschool.com</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+:root {
+
+  /* ── Primary ── */
+  --color-primary-50:  #FDF7F1;
+  --color-primary-100: #FDE6CF;
+  --color-primary-500: #F5B87B;
+  --color-primary-900: #24140B;
+
+  /* ── Neutral ── */
+   --color-neutral-0:  #FFFFFF;
+  --color-neutral-50:  #F2F2F2;
+  
+  --color-neutral-500: #737373;
+  --color-neutral-700: #404040;
+  --color-neutral-900: #1E1E1E;
+
+  /* ── Dark (Alpha) ── */
+  --color-dark-40a: rgb(0 0 0 / 0.4);
+  --color-dark-60a: rgb(0 0 0 / 0.6);
+
+/* ——————————————————————————————————————————
+     FONT FAMILY
+     Noto Sans TC — all weights
+     —————————————————————————————————————————— */
+    --font-primary:  "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    --font-mono:  "JetBrains Mono", "Fira Code", monospace;
+ /* ——————————————————————————————————————————
+     FONT WEIGHT
+     —————————————————————————————————————————— */
+    --font-weight-medium:         500;
+    --font-weight-bold:           700;
+  /* ——————————————————————————————————————————
+     TYPOGRAPHY — Display
+     —————————————————————————————————————————— */
+     --display-1:       300px;
+     --display-2:       160px;
+     --display-lh:      1.2;
+
+  /* ——————————————————————————————————————————
+     TYPOGRAPHY — Heading (weight: 700)
+     —————————————————————————————————————————— */
+  --heading-xxxl:    80px;
+  --heading-xxl:     48px;
+  --heading-xl:      40px;
+  --heading-lg:      32px;
+  --heading-md:      28px;
+  --heading-sm:      24px;
+  --heading-xs:      20px;
+  --heading-xxs:     18px;
+  --heading-xxxs:    16px;
+  --heading-xxxxs:   14px;
+  --heading-lh-tight: 1.2;
+  --heading-lh:      1.5;
+
+  /* ——————————————————————————————————————————
+     TYPOGRAPHY — Label / Paragraph (weight: 500)
+     —————————————————————————————————————————— */
+  --text-md:         16px;
+  --text-sm:         14px;
+  --text-xs:         13px;
+  --text-lh:         1.5;
+
+  /* ——————————————————————————————————————————
+     GRID
+     —————————————————————————————————————————— */
+  --grid-columns:    12;
+  --grid-gutter:     24px;
+  --grid-margin:     48px;
+  --grid-max-width:  1200px;
+
+  /* ——————————————————————————————————————————
+     SPACING
+     —————————————————————————————————————————— */
+  --space-1:         4px;
+  --space-2:         8px;
+  --space-3:         12px;
+  --space-4:         16px;
+  --space-5:         20px;
+  --space-6:         24px;
+  --space-8:         32px;
+  --space-10:        40px;
+  --space-12:        48px;
+  --space-16:        64px;
+  --space-20:        80px;
+
+  /* ——————————————————————————————————————————
+     BORDER RADIUS
+     —————————————————————————————————————————— */
+  --radius-sm:       4px;
+  --radius-md:       8px;
+  --radius-lg:       16px;
+  --radius-full:     9999px;
+
+  /* ——————————————————————————————————————————
+     SHADOWS
+     —————————————————————————————————————————— */
+  --shadow-sm:       0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md:       0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg:       0 12px 32px rgba(0, 0, 0, 0.12);
+
+  /* ——————————————————————————————————————————
+     TRANSITION
+     —————————————————————————————————————————— */
+  --ease:            cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+}
+
+
+/* ============================================
+   RWD Grid Overrides
+   ============================================ */
+@media (max-width: 1023px) {
+  :root {
+    --grid-columns:  8;
+    --grid-gutter:   20px;
+    --grid-margin:   32px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --grid-columns:  4;
+    --grid-gutter:   16px;
+    --grid-margin:   16px;
+  }
+}
